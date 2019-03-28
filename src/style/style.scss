@@ -1,0 +1,104 @@
+@import './fonts';
+@import './reset';
+
+// 'Proxima Regular';
+// 'Proxima Semibold';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: radial-gradient(circle 793px at center, #bd6d57 0%, #bd6d57 36%, #9d4680 74%, #714e86 99%, #714e86 100%);
+}
+
+.header-wrapper {
+    color: #ffffff;
+    h2 {
+        margin: 45px 0 20px;
+        font-family: 'Proxima Semibold', 'Arial';
+        font-size: 42px;
+    }
+
+    p {
+        font-family: 'Proxima Regular', 'Arial';
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .header-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0 50px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.main {
+    background: #ffffff;
+    
+    &-wrapper {
+        h2 {
+            margin: 45px 0 80px;
+            font-family: 'Proxima Semibold', 'Arial';
+            font-size: 42px;
+            color: #222222;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+
+        & > img {
+            width: calc(100% - 400px);
+            margin-right: 40px;
+        }
+    }
+
+    .services {
+        &-list {
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            &-item {
+                flex-basis: 50%;
+                
+                font-family: 'Proxima Regular', 'Arial';
+                h3 {
+                    margin: 27px 0;
+                    font-size: 18px;
+                    color: #3c434d;
+                }
+
+                p {
+                    max-width: 250px;
+                    font-size: 16px;
+                    color: #80909c;
+                    line-height: 20px;
+                }
+
+                &:nth-of-type(4) {
+                    margin-top: 70px;
+                }
+
+                &:nth-of-type(3) {
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
